@@ -1,0 +1,22 @@
+# Harkirat Cohort3-Docker
+ -  Made simple express application
+ -  Tried to write simple dockerFile
+ -  Docker Engine : is an open-source containerization technology that allows developers to package applications into container
+ -  Docker Image : is a executable package that includes everything needed to run a piece of software [code, libraries and dependencies]
+ -  Docker Container : encapsulates the application and its dependencies, running in an isolated environment.
+ -  Docker Registry : is similar to github, but it lets you push images rather than sourcecode
+       - Docker’s main registry - https://dockerhub.com/
+ -  Docker common commands
+      - docker ps
+      - docker images [docker build -t image_name .]
+      - docker run [docker run -p 3000:3000 image_name]
+      - try visiting that particular port
+      - docker build
+      - docker push
+      - docker exec -it <container_id> sh
+      - docker kill <container_id>
+-   Port Mapping
+      - docker run -p 27018:27017 mongo
+          - 27018 : image runs locally on port 27018
+          - 27017 : image runs on container's port 27017
+
